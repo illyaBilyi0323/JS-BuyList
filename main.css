@@ -1,9 +1,200 @@
-h1 {
-    color: red;
+
+body {
+	font-family: sans-serif;
+    font-size: 12px;
+    background-color: #dedede;
+    padding: 60px;
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
-    background-color: purple;
+button{
+    border-radius: 2px;
+    border: 1px solid #cdcbcb;
+    padding: 5px;
+    font-size: 9px;
+    font-weight: bold;
+    color: gray;
+}
+
+.bl-background {
+    background: #dedede;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+
+.bl-input{
+    padding: 7px;
+    border-radius: 5px 0 0 5px;
+    border-left: 1px solid #cdcbcd;
+    border-top: 1px solid #cdcbcb;
+    border-bottom: 1px solid #cdcbcb;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 78%;
+}
+.bl-list {
+    background: white;
+    margin-bottom: 10px;
+    margin-left: 20px; 
+    display: inline-block;
+    width: 57%;
+    vertical-align: top;
+    /* padding-bottom: 5px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* padding-left: 20px; */
+    border: 1px solid #cdcbcb;
+    border-radius: 8px;
+    text-indent: 7px;
+}
+
+.bl-title-bought{
+    padding: 14px 0 14px 10px;
+    border-top: 1px solid #cdcbcb;
+    font-size:18px;
+    font-weight: bold;
+    
+    }
+.bl-title-left{
+    padding: 14px 0 14px 10px;
+    border-bottom: 1px solid #cdcbcb;
+    font-size:18px;
+    font-weight: bold;
+    }
+
+.bl-title-empty{
+    padding: 12px;
+    border-top: 1px solid #cdcbcb;
+}
+.bl-content{
+    padding: 14px 0 14px 10px;
+}
+.bl-row {
+    border-bottom: 1px solid #cdcbcb;
+    padding-bottom: 5px;
+    padding-top: 5px; 
+
+}
+
+.bl-product, .bl-count, .bl-buttons {
+	display: inline-block;
+}
+
+.bl-product {
+    width: 35%;
+    
+}
+
+.bl-count {
+    width: 20%;
+   
+    
+}
+
+.bl-buttons {
+	width: 42%;
+    text-align: right;
+}
+
+.bl-bought {
+    background: white;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    border: 1px solid #cdcbcb;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.bl-rest-item {
+    padding: 5px;
+    background-color: #e2e2e2;
+    display: inline-block;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 9px;
+    color: gray;
+}
+
+
+
+.bl-rest-count {
+	display: inline-block;
+	padding: 5px;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;     
+    text-align: center;                                                                                                                                                                                                                                                                                                                         
+	color: white;
+    background-color: #F2711C;
+    font-weight: bold;
+    font-size: 9px;
+}
+
+/*Кнопки*/
+.bl-label {
+    background: #cdcbcb;
+    height: 20px;
+    width: 20px;
+    padding: 2px;
+    display: inline-block;
+    /* text-align: center; */
+}
+
+
+.bl-plus{
+    background: #04a613;
+    /* #C70700; */
+    border: none;
+    border-radius: 50%;
+    border-bottom: 2px solid #307300 !important;
+    height: 20px; width: 20px;
+    color:white;
+}
+
+
+.bl-plus:hover {
+    background: #84ff8f;
+} 
+
+.bl-close {
+	background-color: #DB2828;
+    border: 1px solid #DB2828;
+    border-radius: 2px;
+    text-align: center;
+    height: 20px; width: 20px;
+    box-shadow: 0 1px;
+    padding: 3px;
+    margin-left: 2px;
+    color:white;
+    border-bottom: 2px solid #950700 !important;
+    
+    
+}   
+
+.bl-add{
+    background-color:#2185D0;
+    padding: 7px; 
+    margin-right: 5px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #2185D0;
+    width: 15%;
+    color: white !important; 
+    font-weight: bold;
+    font-size: 14px !important;
+   
+    /* border-right: 1px solid blue;
+    border-bottom: 1px solid blue; */ 
+    /* border: none;  */ 
+}
+
+.bl-substract{
+    background: #DB2828;
+    /* #C70700; */
+    border: none;
+    border-radius: 50%;
+    border-bottom: 2px solid #950700 !important;
+    height: 20px; width: 20px;
+    color:white;
 }
