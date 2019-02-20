@@ -1,11 +1,22 @@
+ 
+html, body {
+    min-width: 360px;
+}
 
 body {
 	font-family: sans-serif;
     font-size: 12px;
     background-color: #dedede;
     padding: 60px;
+    /* position: relative; */
+    /* display: flex;
+    flex-direction: row;
+    align-items: stretch; */
 }
 
+p{
+    font-size: 25px;
+}
 button{
     border-radius: 2px;
     border: 1px solid #cdcbcb;
@@ -19,9 +30,23 @@ button{
     background: #dedede;
     padding: 20px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 2000px;
+    display: flex;
+   flex-direction: row;
+
 
 }
+
+/* @media (max-width: 1000px){
+    .bl-background{
+        background: #dedede;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1000px;
+        display: flex;
+       flex-direction: column;
+    }
+} */
 
 .bl-input{
     padding: 7px;
@@ -33,6 +58,8 @@ button{
     margin-left: 5px;
     width: 78%;
 }
+
+
 .bl-list {
     background: white;
     margin-bottom: 10px;
@@ -47,6 +74,15 @@ button{
     border: 1px solid #cdcbcb;
     border-radius: 8px;
     text-indent: 7px;
+    
+}
+
+
+.bl-row {
+    border-bottom: 1px solid #cdcbcb;
+    padding-bottom: 5px;
+    padding-top: 5px; 
+
 }
 
 .bl-title-bought{
@@ -70,12 +106,7 @@ button{
 .bl-content{
     padding: 14px 0 14px 10px;
 }
-.bl-row {
-    border-bottom: 1px solid #cdcbcb;
-    padding-bottom: 5px;
-    padding-top: 5px; 
 
-}
 
 .bl-product, .bl-count, .bl-buttons {
 	display: inline-block;
@@ -197,4 +228,133 @@ button{
     border-bottom: 2px solid #950700 !important;
     height: 20px; width: 20px;
     color:white;
+}
+
+.badge{
+    position: fixed;
+    bottom:0;
+    left:20px;
+    height: 30px;
+    border-radius: 30px 30px 0 0;
+    background-color: purple;
+    width:200px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    font-family: sans-serif;
+    
+}
+
+.line{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.author{
+    margin-top: 50px;
+    font-size: 20px;  
+    
+}
+.badge:hover{
+    position:fixed;
+    bottom:0;
+    left:20px;
+    height: 110px;
+    border-radius: 30px 30px 0 0;
+    background-color: blue;
+    width:200px;
+    text-align: center;
+    color:white;
+    transition: all 2s ease;
+    font-size:30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+
+    @media print {
+        .badge {
+            color: black;
+            background-color: white;
+            border: 1px solid purple;
+            bottom: 0;
+            height: 80px;
+            border-radius: 30px 30px 0 0;
+        }
+        .line {
+            display: none;
+        }
+        
+}
+
+.tooltip {
+	position: relative;
+	
+}
+
+.tooltip::after {
+	background:purple;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 1px 1px 10px purple;
+	color: #FFF;
+	content: attr(data-tooltip); 
+    margin-top: -35px;
+    margin-left: -17px;
+	opacity: 0; 
+	padding: 3px 10px; 
+	position: absolute;
+	visibility: hidden; 
+			transform: scaleY(0);
+    transition: all 0.7s ease 0.3s;
+    display: block; 
+}
+		
+.tooltip:hover::after {
+	opacity: 1; 
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+
+@media(max-width:990px){
+    body {
+        padding: 0;
+    }
+    .bl-background {
+        max-width: none;
+        display: block;
+    }
+    .bl-list,.bl-bought{
+        display: block;
+        width: 90%;
+    }
+}
+
+@media(max-width:600px){
+    .bl-row {
+        display: table;
+        width: 100%;
+        border-bottom: 1px solid #cdcbcb;
+    }
+    .bl-product,.bl-count,.bl-buttons {
+        display: table-cell;
+        width: 30%;
+    }
+}    
+
+@media(max-width: 1060px) {
+    .bl-input {
+        width: auto;
+        display: block;
+        margin: 5px auto;
+    }
+    .bl-add {
+        display: block;
+        width: 45%;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
 }

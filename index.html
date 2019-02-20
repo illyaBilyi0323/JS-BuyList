@@ -9,20 +9,20 @@
 
 <div class="bl-background">
     <div class="bl-list">
-        <input class="bl-input" size="50" placeholder="Назва товару"><button class="bl-add">Додати</button></input>
+        <input class="bl-input" size="50" placeholder="Назва товару"><button class="bl-add tooltip" data-tooltip="adding product">Додати</button></input>
          <div class="bl-row">
         
             <div class="bl-product">
                 Помідори
             </div>
             <div class="bl-count">
-                    <button class="bl-substract">-</button>
+                    <button class="bl-substract tooltip" data-tooltip="minus">-</button>
                 <span class="bl-label">3</span>
-                <button class="bl-plus">+</button>
+                <button data-tooltip = "plus button" class="tooltip bl-plus">+</button>
             </div>
             <div class="bl-buttons">
-                <button>Куплено</button>
-                <button class="bl-close">x</button>
+                <button class="tooltip" data-tooltip = "Тоoltip">Куплено</button>
+                <button class="bl-close tooltip" data-tooltip="close">x</button>
             </div>
         </div>
 
@@ -31,13 +31,13 @@
                 Печиво
             </div>
             <div class="bl-count">
-                <button class="bl-substract">-</button>
+                <button class="bl-substract tooltip" data-tooltip="minus"  >-</button>
                 <span class="bl-label">3</span>
-                <button class="bl-plus">+</button>
+                <button class="bl-plus tooltip" data-tooltip="close">+</button>
             </div>
             <div class="bl-buttons">
-                <button>Куплено</button>
-                <button class="bl-close">x</button>
+                <button class="tooltip" data-tooltip = "Tooltip">Куплено</button>
+                <button class="bl-close tooltip" data-tooltip="close">x</button>
             </div>
         </div>
 
@@ -46,13 +46,15 @@
                 Сир
             </div>
             <div class="bl-count">
-                    <button class="bl-substract">-</button>
-                <span class="bl-label">3</span>
-                <button class="bl-plus">+</button>
+                    <button class="bl-substract tooltip" data-tooltip="minus">-</button>
+                <span class="bl-label tooltip">3</span>
+                <button class="bl-plus tooltip" data-tooltip="add">+</button>
             </div>
             <div class="bl-buttons">
-                <button>Куплено</button>
-                <button class="bl-close">x</button>
+                <button class="tooltip" data-tooltip = "Тоoltip">Куплено
+                   
+                </button>
+                <button class="bl-close tooltip" data-tooltip="close">x</button>
             </div>
         </div>
 
@@ -82,6 +84,7 @@
         
         <div class="bl-title-bought">Куплене</div> <div class="bl-title-empty"> </div>
     </div>
+    <div class="badge"> <span class="line"> Buy List </span> <span class="author"> Created By: <br> Illya Bilyi</span> </div> </div>
 </div>
 
 </body>
