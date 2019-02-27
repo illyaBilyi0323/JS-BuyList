@@ -4,88 +4,32 @@
     <meta charset="UTF-8">
     <title>buylist.bilyi</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src = "script.js"></script>
 </head>
 <body>
 
 <div class="bl-background">
     <div class="bl-list">
-        <input class="bl-input" size="50" placeholder="Назва товару"><button class="bl-add tooltip" data-tooltip="adding product">Додати</button></input>
-         <div class="bl-row">
-        
-            <div class="bl-product">
-                Помідори
-            </div>
-            <div class="bl-count">
-                    <button class="bl-substract tooltip" data-tooltip="minus">-</button>
-                <span class="bl-label">3</span>
-                <button data-tooltip = "plus button" class="tooltip bl-plus">+</button>
-            </div>
-            <div class="bl-buttons">
-                <button class="tooltip" data-tooltip = "Тоoltip">Куплено</button>
-                <button class="bl-close tooltip" data-tooltip="close">x</button>
-            </div>
-        </div>
+        <input id="wareName" class="bl-input" size="50" placeholder="Назва товару">
+        <button data-action="addWare" class="bl-add tooltip" data-tooltip="adding product">Додати</button></input>
+        <div id="bl-list-root">
 
-        <div class="bl-row">
-            <div class="bl-product">
-                Печиво
-            </div>
-            <div class="bl-count">
-                <button class="bl-substract tooltip" data-tooltip="minus"  >-</button>
-                <span class="bl-label">3</span>
-                <button class="bl-plus tooltip" data-tooltip="close">+</button>
-            </div>
-            <div class="bl-buttons">
-                <button class="tooltip" data-tooltip = "Tooltip">Куплено</button>
-                <button class="bl-close tooltip" data-tooltip="close">x</button>
-            </div>
         </div>
-
-        <div class="bl-row">
-            <div class="bl-product">
-                Сир
-            </div>
-            <div class="bl-count">
-                    <button class="bl-substract tooltip" data-tooltip="minus">-</button>
-                <span class="bl-label tooltip">3</span>
-                <button class="bl-plus tooltip" data-tooltip="add">+</button>
-            </div>
-            <div class="bl-buttons">
-                <button class="tooltip" data-tooltip = "Тоoltip">Куплено
-                   
-                </button>
-                <button class="bl-close tooltip" data-tooltip="close">x</button>
-            </div>
-        </div>
-
     </div>
     <div class="bl-bought">
         <div class="bl-title-left">Залишилося</div>
-        <div class="bl-content">
-            <div class="bl-rest-item">
-                Помідори
-                <div class="bl-rest-count">
-                    1
-                </div>
-            </div>
-            <div class="bl-rest-item">
-                Печиво
-                <div class="bl-rest-count">
-                    1
-                </div>
-             </div>
-             <div class="bl-rest-item">
-                Сир
-                <div class="bl-rest-count">
-                    1
-                </div>
-            </div>
+        <div class="bl-content" id="rest-root">
+
         </div>
-        
-        <div class="bl-title-bought">Куплене</div> <div class="bl-title-empty"> </div>
+        <div class="bl-title-bought">Куплене</div>
+        <div class="bl-title-empty" id="bought-root">
+
+        </div>
     </div>
     <div class="badge"> <span class="line"> Buy List </span> <span class="author"> Created By: <br> Illya Bilyi</span> </div> </div>
 </div>
+
 
 </body>
 </html>

@@ -16,6 +16,7 @@ body {
 
 p{
     font-size: 25px;
+    color: red;
 }
 button{
     border-radius: 2px;
@@ -24,6 +25,14 @@ button{
     font-size: 9px;
     font-weight: bold;
     color: gray;
+}
+
+.hidden {
+    display: none;
+}
+
+.through {
+    text-decoration: line-through;
 }
 
 .bl-background {
@@ -122,6 +131,19 @@ button{
    
     
 }
+
+.bought .bl-product {
+    text-decoration: line-through;
+}
+
+.bought [data-action="decrement"],
+.bought [data-action="increment"],
+.bought [data-action="close"]
+{
+    visibility: hidden;
+}
+
+
 
 .bl-buttons {
 	width: 42%;
